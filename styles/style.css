@@ -271,9 +271,7 @@ h5 a{
 .valor{
     color: #0030c2;
     font-size: 1.2em;
-}
-.link-what{
-    margin-top: 24px;
+    flex-grow: 1;
 }
 .footer-container{
     margin-top: 34px;
