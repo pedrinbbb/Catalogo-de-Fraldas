@@ -36,7 +36,7 @@
     }.fundo-banner h1{
         padding-top: 0px;
         width: 320px;
-        font-size: 1.5em;
+        font-size: 2em;
     }
     .text-banner a.fale:hover{
         background-color: white;
@@ -73,7 +73,7 @@
 /* altura responsiva notebook */
 @media screen and (min-height: 741px) and (max-height: 907px) and (min-width: 970px) and (max-width: 1920px){
     .fundo-banner{
-        height: 400px;
+        height: 350px;
     }
 }
 /* altura responsiva pc */
@@ -126,15 +126,15 @@
     }
     .fundo-banner h1{
         width: 570px;
-        font-size: 2.5em;
+        font-size: 3.5em;
     }
     .fundo-banner p{
-        font-size: 1.2em;
+        font-size: 1.3em;
         width: 420px;
     }
     .text-banner li:hover{
         transition: 0.5s;
-        transform: scale(1.1);
+        transform: scaleX(1.1);
     }   
     .beneficio-container{
         flex-direction: row;

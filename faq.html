@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ | Farmácia Genial</title>
+
+  <link rel="shortcut icon" href="img/favicon-16x16.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/media-query.css">
+
+  <style>
+    .faq-banner {
+      background: linear-gradient(135deg, #3145f7, #f72f2f);
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .faq-banner h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    .faq-banner p {
+      font-size: 18px;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .faq-container {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    .faq-item {
+      border-bottom: 1px solid #ddd;
+      padding: 20px 0;
+      cursor: pointer;
+    }
+
+    .faq-pergunta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 18px;
+      font-weight: 600;
+      color: #333;
+    }
+
+    .faq-resposta {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+      color: #555;
+      line-height: 1.6;
+      margin-top: 10px;
+    }
+
+    .faq-item.ativo .faq-resposta {
+      max-height: 200px;
+    }
+
+    .faq-item span {
+      font-size: 28px;
+      color: #2fa4ff;
+      transition: transform 0.3s;
+    }
+
+    .faq-item.ativo span {
+      transform: rotate(180deg);
+    }
+    .voltar{
+      display: flex;
+      justify-content: center;
+    
+    }
+  </style>
+</head>
+<body>
+
+  <!-- BANNER -->
+  <section class="faq-banner">
+    <h1>Perguntas Frequentes</h1>
+    <p>Tire suas dúvidas sobre a Farmácia Genial e nossos serviços.</p>
+  </section>
+  <div class="voltar">
+    <h1><a href="index.html"><span class="material-symbols-outlined" style="font-size: 50px;">arrow_back</span></a></h1>
+  </div>
+
+  <!-- FAQ -->
+  <main class="faq-container">
+
+    <div class="faq-item">
+      <div class="faq-pergunta">
+        <p>Quais são os horários de funcionamento?</p>
+        <span class="material-symbols-outlined">expand_more</span>
+      </div>
+      <div class="faq-resposta">
+        <p>
+          Funcionamos de segunda a sábado, das 7h às 21h.
+          Domingo, das 7h às 12h.
+        </p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-pergunta">
+        <p>A Farmácia Genial faz entregas?</p>
+        <span class="material-symbols-outlined">expand_more</span>
+      </div>
+      <div class="faq-resposta">
+        <p>
+          Sim! Realizamos entregas rápidas na região.
+          Entre em contato pelo WhatsApp para verificar disponibilidade.
+        </p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-pergunta">
+        <p>Posso comprar pelo WhatsApp?</p>
+        <span class="material-symbols-outlined">expand_more</span>
+      </div>
+      <div class="faq-resposta">
+        <p>
+          Sim. Basta escolher o produto e falar com nosso atendimento
+          pelo WhatsApp para concluir seu pedido.
+        </p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-pergunta">
+        <p>Os produtos são originais?</p>
+        <span class="material-symbols-outlined">expand_more</span>
+      </div>
+      <div class="faq-resposta">
+        <p>
+          Sim! Trabalhamos apenas com fornecedores certificados
+          e produtos originais, garantindo segurança e qualidade.
+        </p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-pergunta">
+        <p>Como entro em contato com a Farmácia Genial?</p>
+        <span class="material-symbols-outlined">expand_more</span>
+      </div>
+      <div class="faq-resposta">
+        <p>
+          Você pode entrar em contato pelo WhatsApp, telefone
+          ou através da página de contato do site.
+        </p>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- JS -->
+  <script>
+    const faqItems = document.querySelectorAll('.faq-item');
+
+    faqItems.forEach(item => {
+      item.addEventListener('click', () => {
+        item.classList.toggle('ativo');
+      });
+    });
+  </script>
+
+</body>
+</html>
