@@ -111,6 +111,20 @@
             </div>
             <p id="nenhum-produto" style="display:none; margin-top:20px; font-size:18px;">Nenhum produto encontrado 😕</p>
 
+            <div class="input-2">
+                <select id="filtro-tamanho">
+                    <option value="">Filtrar Tamanhos</option>
+                    <option value="">Todos os Tamanhos</option>
+                    <option value="p">P</option>
+                    <option value="m">M</option>
+                    <option value="g">G</option>
+                    <option value="xg">XG</option>
+                    <option value="xxg">XXG</option>
+                    <option value="unico">Único</option>
+                </select>
+            </div>
+
+
         <section class="produtos-container">
             
             <aside class="produtos-col">
@@ -348,6 +362,7 @@
             <h2>Encontrou algum bug ou erro?</h2>
             <h3>Envie para esse email: pedroggfarma@gmail.com</h3>
         </div>
+        <!-- buscar fralda nome -->
     <script>
         function abrirMenu(){
             if(document.getElementById('menu').style.width == '250px'){
@@ -360,29 +375,39 @@
             document.getElementById('menu').style.width = '0px'
         }
     </script>
+    <!-- buscar pelo tamanho -->
     <script>
         const inputPesquisa = document.getElementById('pesquisa');
+        const filtroTamanho = document.getElementById('filtro-tamanho');
         const produtos = document.querySelectorAll('.produtos-col');
         const msgNenhum = document.getElementById('nenhum-produto');
 
-        inputPesquisa.addEventListener('input', function () {
+        function filtrarProdutos() {
             const termo = inputPesquisa.value.toLowerCase();
+            const tamanhoSelecionado = filtroTamanho.value.toLowerCase();
             let encontrou = false;
 
             produtos.forEach(produto => {
-            const textoProduto = produto.innerText.toLowerCase();
+                const textoProduto = produto.innerText.toLowerCase();
 
-            if (textoProduto.includes(termo)) {
-                produto.style.display = 'block';
-                encontrou = true;
-            } else {
-                produto.style.display = 'none';
-            }
+                const matchTexto = textoProduto.includes(termo);
+                const matchTamanho = tamanhoSelecionado === "" || textoProduto.includes("tam: " + tamanhoSelecionado);
+
+                if (matchTexto && matchTamanho) {
+                    produto.style.display = 'block';
+                    encontrou = true;
+                } else {
+                    produto.style.display = 'none';
+                }
             });
-            // mostra ou esconde a mensagem
+
             msgNenhum.style.display = encontrou ? 'none' : 'block';
-        });
+        }
+
+        inputPesquisa.addEventListener('input', filtrarProdutos);
+        filtroTamanho.addEventListener('change', filtrarProdutos);
 </script>
+
 
 
 </body>

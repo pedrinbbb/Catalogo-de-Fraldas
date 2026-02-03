@@ -223,6 +223,11 @@ input#pesquisa:focus{
     justify-content: center;
     align-items: center;
 }
+.input-2{
+    display: flex;
+    justify-content: center;
+    padding: 17px;
+}
 aside{
     background-color: white;
     text-align: center;
