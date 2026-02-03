@@ -227,6 +227,8 @@ aside{
     background-color: white;
     text-align: center;
     width: 300px;
+    display: flex;
+    flex-direction: column;
 }
 aside img{
     width: 300px;
@@ -269,6 +271,9 @@ h5 a{
 .valor{
     color: #0030c2;
     font-size: 1.2em;
+}
+.link-what{
+    margin-top: 25px;
 }
 .footer-container{
     margin-top: 34px;
