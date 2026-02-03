@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmacia genial</title>
+    <link rel="stylesheet" href="styles/media-query.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="shortcut icon" href="img/favicon-16x16.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        @font-face {
+            font-family: fonte;
+            src: url(fontes/PassoTest-SemiBold.ttf) format(truetype);
+        }
+        @font-face {
+            font-family: fonte1;
+            src: url(fontes/PassoTest-Regular.ttf) format(truetype);
+        }
+        @font-face {
+            font-family: fonte2;
+            src: url(fontes/PassoTest-Medium.ttf) format(truetype);
+        }
+
+        @font-face {
+            font-family: fonte3;
+            src: url(fontes/PassoTest-Bold.ttf) format(truetype);
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="header-container">
+        <div class="header-col">
+            <a href="#"><img src="img/cabecalho.png" width="42px"> <span>Farmacia Genial</span></a>
+        </div>
+        <div class="header-col">
+            <!-- <span class="material-symbols-outlined">favorite</span> -->
+            <span class="material-symbols-outlined" id="btn-abrir" onclick="abrirMenu()">menu</span>
+            <div class="header-nav">
+                <a href="#">Início </a>
+                <a href="#">Catálogo</a>
+                <a href="#">Produtos</a>
+            </div>
+        </div> 
+        <div class="header-col3">
+            <div class="header-col">
+                <i class="material-symbols-outlined">shopping_cart</i>
+                <i class="material-symbols-outlined">favorite</i>
+                <i class="material-symbols-outlined">person</i>
+            </div>
+        </div>
+    </div>
+    <nav id="menu">
+            <ul>
+                <li><a href="#" onclick="fecharMenu()"> <span class="material-symbols-outlined">close</span>Fechar</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="promocoes.html">Promoções</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav> 
+    
+        <section class="fundo-banner">
+            <div class="text-banner">
+                <h1>Cuidado e bem-estar para toda a <span class="destaque">família</span>.</h1>
+                <p>Encontre os melhores medicamentos, produtos de higiene e beleza com os menores preços. Entrega rápida e atendimento personalizado.</p>
+                <ul>
+                    <li><a href="" class="prod">Produtos</a></li>
+                    <li><a href="" class="fale">Fale Conosco</a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="beneficios">
+            <div class="beneficio-container">
+                <div class="beneficio-item">
+                    <div class="icon-box"><span class="material-symbols-outlined">moped</span></div>
+                    <div class="text">
+                        <h4>Entrega Gratis</h4>
+                        <p>Entrega rápida</p>
+                    </div>
+                </div>
+                <div class="beneficio-item">
+                    <div class="icon-box"><span class="material-symbols-outlined">shield</span></div>
+                        <div class="text">
+                            <h4>Produtos Originais</h4>
+                            <p>Garantia de qualidade</p>
+                        </div>                  
+                </div>
+                <div class="beneficio-item">
+                    <div class="icon-box"><span class="material-symbols-outlined">person</span></div>
+                    <div class="text">
+                        <h4>Atendimento de Qualidade</h4>
+                        <p>Sempre disponivel</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <main>
+        <p>MAIS VENDIDOS</p>
+        <h1>Produtos em Destaque</h1>
+        <section class="produtos-container">
+            <aside class="produtos-col">
+                <img src="img/paracetamol.png" alt="">
+                <h3>Paracetamol 500mg</h3>
+                <h4>30 comprimidos</h4>
+                <h5 class="valor">R$ 10,00</h5>
+            </aside>
+            <aside class="produtos-col">
+                <img src="img/paracetamol.png" alt="">
+                <h3>Paracetamol 500mg</h3>
+                <h4>30 comprimidos</h4>
+                <h5 class="valor">R$ 10,00</h5>
+            </aside>
+            <aside class="produtos-col">
+                <img src="img/paracetamol.png" alt="">
+                <h3>Paracetamol 500mg</h3>
+                <h4>30 comprimidos</h4>
+                <h5 class="valor">R$ 10,00</h5>
+            </aside>         
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col">
+                <h1>Farmácia Genial</h1>
+                <p>Sua farmácia de confiança. Produtos de qualidade, preços justos e atendimento especializado.</p>
+                <div class="footer-icon-box">
+                    <div class="icon-box2"><a href="https://www.instagram.com/pedrolucasssm/" target="_blank"><i class="fa fa-instagram"></i></a></div>
+                    <div class="icon-box2"><a href="https://wa.link/xu3nym" target="_blank"><i class="fa fa-whatsapp"></i></a></div>
+                    <div class="icon-box2"><a href="https://www.facebook.com/profile.php?id=61578829323153" target="_blank"><i class="fa fa-facebook-f"></i></a></div>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h1>Links Rápidos</h1>
+                <p><a href="#">Sobre Nós</a></p>
+                <p><a href="#">Produtos</a></p>
+                <p><a href="#">Ofertas</a></p>
+                <p><a href="#">FAQ</a></p>
+
+            </div>
+            <div class="footer-col">
+                <h1>Contato</h1>
+                <div class="footer-ctt">
+                    <span class="material-symbols-outlined">phone_callback</span>
+                    <span class="text">(85) 9 8810-4274</span>
+                </div>
+                <div class="footer-ctt">
+                    <span class="material-symbols-outlined">mail</span>
+                    <span class="text">Contato@gmail.com</span>
+                </div>
+                <div class="footer-ctt">
+                    <span class="material-symbols-outlined">location_on</span>
+                    <span class="text">Av. Osorio de Paiva 5386, Canindezinho. Fortaleza-CE</span>
+                </div>
+            </div>
+    </footer>
+    <script>
+        function abrirMenu(){
+            if(document.getElementById('menu').style.width == '250px'){
+                document.getElementById('menu').style.width = '0px'
+            }else{
+                document.getElementById('menu').style.width = '250px'
+            }
+        }
+        function fecharMenu(){
+            document.getElementById('menu').style.width = '0px'
+        }
+    </script>
+</body>
+</html>
