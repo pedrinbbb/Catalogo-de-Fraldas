@@ -346,14 +346,18 @@ div.icon-box2:hover{
     padding-top: 6px;
     color: #F87171;
 }
+.footer-erro{
+    background-color: #1E3EA1;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: fonte3;
+    padding: 24px;
 
-
-
-
-
-
-
-
-
-
-
+}
+.footer-erro h2{
+    font-size: 1.2em;
+}
+.footer-erro h3{
+    font-size: 0.9em;
+    color: rgba(189, 189, 189, 0.774);
+}
