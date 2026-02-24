@@ -15,8 +15,9 @@
 
 div.header-container{
     display: flex;
+    justify-content: flex-start;
     align-items: center;
-    
+    padding: 8px;
 }
 html, body{
     background-color: #ebfeff36;
@@ -31,14 +32,12 @@ html, body{
     font-weight: bold;
     font-family: fonte3;
 }
-.header-col{
-    padding-top: 12px;
-}
 .header-col > span{
     padding-top: 6px;
     color: #3840a8;
     cursor: context-menu;
 }
+
 a{
     text-decoration: none;
 }
@@ -75,7 +74,7 @@ nav a:hover{
     background-position: left center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-top: 6px;
+    margin-top: px;
     padding: 12px 25px;
     display: flex;
     justify-content: center;
@@ -129,7 +128,7 @@ nav a:hover{
     justify-content: center;
     margin: auto;
     cursor: context-menu;
-    background-color: #ebfeff6e
+    background-color: #ffffff00
 }
 .icon-box{
     width: 38px;
@@ -246,10 +245,10 @@ aside{
 aside img{
     width: 300px;
     height: 250px;
+    transition: 0.5s;
 }
 aside img:hover{
-    transition: 0.6s;
-    transform: scale(1.1);
+    transform: scale(1.02);
 }
 aside h3{
     text-align: left;
@@ -270,7 +269,7 @@ aside h5{
     font-size: 1em;
     font-family: Arial, Helvetica, sans-serif;
 }
-h5 a{
+aside a{
     display: flex;
     gap: 8px;
     justify-content: center;
@@ -281,6 +280,10 @@ h5 a{
     padding: 8px;
     background-color: #22C55E;
     border-radius: 20px;
+    transition: 0.5s;
+}
+aside a:hover{
+    background-color: #00d34d;
 }
 .valor{
     color: #0030c2;
@@ -314,6 +317,7 @@ h5 a{
     font-family: Arial, Helvetica, sans-serif;
     text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.089);
     line-height: 1.7em;
+    transition: 0.5s;
 }
 .footer-col > p > a:hover{
     color: #ffffff;
@@ -332,6 +336,7 @@ div.icon-box2{
     justify-content: center;
     align-items: center;
     border-radius: 50px;
+    transition: 0.5s;
 }
 .footer-col i{
     flex: auto;
