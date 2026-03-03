@@ -2,7 +2,7 @@
     tablet 501 x 1024
     pc 1025 x 1920
 */ 
-@media screen and (min-width: 300px) and (max-width: 700px) {
+@media screen and (min-width: 0px) and (max-width: 700px) {
     div.header-container{
         display: inline-block;
         justify-content: space-evenly;
@@ -45,7 +45,7 @@
     }
     .text-banner a:hover{
         transition: 0.5s;
-        background-color: red;    
+        background-color: red;  
     }
     .beneficio-container{
         flex-direction: column;

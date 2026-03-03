@@ -382,7 +382,7 @@ div.icon-box2:hover{
 }
 @media(max-width: 500px){
     .produtos-container{
-        grid-template-columns: .6fr .6fr
+        grid-template-columns: 1fr 1fr;
     }
     aside img{
         width: clamp(50px, 100%, 200px);
