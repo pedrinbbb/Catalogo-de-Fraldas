@@ -161,6 +161,10 @@ nav a:hover{
     margin-top: 5px;
     color: #6F798B;
 }
+main{
+    max-width: 98%;
+    margin: auto;
+}
 main p{
     text-align: center;
     color: #dc322e;
@@ -176,22 +180,12 @@ main h1{
     color: #1E3A5F;
     font-family: fonte2;
 }
-.img-produto{
-    background-image: url(../img/paracetamol.png);
-    background-position: left top;
-    background-repeat: no-repeat;
-    background-size: contain;
-    border: 1px solid black;
-    margin: auto;
-    width: 60%;
-    height: 100vh;
-}
+
 .produtos-container{
-    display: flex;
-    gap: 18px;
-    flex-wrap: wrap;    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)) ;
+    gap: 12px; 
     padding: 8px;
-    justify-content: center;
     margin-top: 25px;
 }
 .produtos-col{
@@ -238,55 +232,57 @@ input#pesquisa:focus{
 aside{
     background-color: rgb(255, 255, 255);
     text-align: center;
-    width: 300px;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 aside img{
-    width: 300px;
-    height: 250px;
+    width: clamp(180px, 20%, 280px);
     transition: 0.5s;
+    flex-grow: 3;
 }
 aside img:hover{
     transform: scale(1.02);
 }
 aside h3{
-    text-align: left;
-    font-size: 1.2em;
+    text-align: center;
+    font-size: clamp(.9em, 4vw, 1.2em);
     font-family: fonte1;
     padding-bottom: 10px;
 }
 aside h4{
-    text-align: left;
-    font-size: 1em;
+    text-align: center;
+    font-size: clamp(.8em, 4vw, 1em);
     font-family: fonte1;
     padding-bottom: 2px;
+    color: #00000094;
     
 }
 aside h5{
     text-align: left;
-    padding-top: 10px;
+    padding-top: 12px;
     font-size: 1em;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: fonte1;
 }
 aside a{
     display: flex;
-    gap: 8px;
+    gap: 4px;
     justify-content: center;
     align-items: center;
     font-family: fonte3;
-    font-size: 1.3em;
+    font-size: clamp(.9em, 2vw, 1.2em);
     color: white;
-    padding: 8px;
+    padding: 4px;
     background-color: #22C55E;
     border-radius: 20px;
     transition: 0.5s;
+    flex-grow: 1;
 }
 aside a:hover{
     background-color: #00d34d;
 }
 .valor{
-    color: #0030c2;
+    color: #255fff;
     font-size: 1.2em;
     flex-grow: 1;
 }
@@ -383,4 +379,12 @@ div.icon-box2:hover{
 .footer-erro h3{
     font-size: 0.9em;
     color: rgba(189, 189, 189, 0.774);
+}
+@media(max-width: 500px){
+    .produtos-container{
+        grid-template-columns: .6fr .6fr
+    }
+    aside img{
+        width: clamp(50px, 100%, 200px);
+    }
 }
