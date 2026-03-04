@@ -266,8 +266,6 @@ aside h5{
 }
 aside a{
     display: flex;
-    gap: 4px;
-    justify-content: center;
     align-items: center;
     font-family: fonte3;
     font-size: clamp(.9em, 2vw, 1.2em);
@@ -276,7 +274,6 @@ aside a{
     background-color: #22C55E;
     border-radius: 20px;
     transition: 0.5s;
-    flex-grow: 1;
 }
 aside a:hover{
     background-color: #00d34d;
@@ -387,4 +384,13 @@ div.icon-box2:hover{
     aside img{
         width: clamp(50px, 100%, 200px);
     }
+}
+@media(max-width: 390px){
+    .link-what a{
+        text-align: center;
+    }
+    .link-what a> i{
+        font-size: 25px;
+    }
+    
 }
