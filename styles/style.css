@@ -20,6 +20,7 @@ div.header-container{
     padding: 8px;
 }
 html, body{
+    scroll-behavior: smooth;
     background-color: #ebfeff36;
 }
 .header-col > a{
@@ -258,17 +259,18 @@ aside h4{
     color: #00000094;
     
 }
-aside h5{
-    text-align: left;
+
+aside h5 {
     padding-top: 12px;
-    font-size: 1em;
     font-family: fonte1;
 }
 aside a{
     display: flex;
     align-items: center;
+    justify-content: center;
+    flex-grow: 1;
     font-family: fonte3;
-    font-size: clamp(.9em, 2vw, 1.2em);
+    font-size: clamp(1em, 2vw, 1.2em);
     color: white;
     padding: 4px;
     background-color: #22C55E;
@@ -388,6 +390,9 @@ div.icon-box2:hover{
 @media(max-width: 390px){
     .link-what a{
         text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
     }
     .link-what a> i{
         font-size: 25px;
